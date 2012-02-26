@@ -106,3 +106,6 @@ if $TERM =~ '-256color$'
 else
   colorscheme default
 endif
+
+" AutoTag
+let g:autotagCtagsCmd="ctags --sort=yes --c++-kinds=+lpx --fields=+aiKSz --extra=+q"
