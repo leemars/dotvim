@@ -99,3 +99,10 @@ endif
 runtime bundle/pathogen/autoload/pathogen.vim
 call pathogen#infect()
 call pathogen#helptags()
+
+" 256 Colors Theme
+if $TERM =~ '-256color$'
+  colorscheme wombat256mod
+else
+  colorscheme default
+endif
