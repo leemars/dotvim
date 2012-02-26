@@ -94,3 +94,8 @@ if !exists(":DiffOrig")
   command DiffOrig vert new | set bt=nofile | r ++edit # | 0d_ | diffthis
 		  \ | wincmd p | diffthis
 endif
+
+" Activate pathogen
+runtime bundle/pathogen/autoload/pathogen.vim
+call pathogen#infect()
+call pathogen#helptags()
