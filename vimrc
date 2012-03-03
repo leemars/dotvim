@@ -100,6 +100,9 @@ map <Leader>p :cprevious<CR>
 " AutoTag
 let g:autotagCtagsCmd="ctags --sort=yes --c++-kinds=+lpx --fields=+aiKSz --extra=+q"
 
+" Mini Buffer Explorer
+let g:miniBufExplModSelTarget=1
+
 " Taglist
 let Tlist_Show_One_File=1
 let Tlist_Exit_OnlyWindow=1
