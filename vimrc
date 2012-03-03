@@ -114,3 +114,14 @@ let g:autotagCtagsCmd="ctags --sort=yes --c++-kinds=+lpx --fields=+aiKSz --extra
 let Tlist_Show_One_File = 1
 let Tlist_Exit_OnlyWindow = 1
 let Tlist_Use_Right_Window = 1
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Files, backups and undo
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" Turn backup off
+set nobackup
+
+" Persistent undo
+set undodir=~/.vim/undodir
+set undofile
