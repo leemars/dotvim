@@ -109,6 +109,22 @@ let Tlist_Exit_OnlyWindow = 1
 let Tlist_Use_Right_Window = 1
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => General
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" Set how many lines of history Vim has to remember
+set history=1000
+
+" With a map leader it's possible to do extra key combinations
+let g:mapleader=","
+
+" Fast editing of the .vimrc
+map <Leader>e :e! ~/.vim/vimrc<CR>
+
+" When vimrc is edited, reload it
+autocmd! BufWritePost vimrc source ~/.vim/vimrc
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Vim user interface
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
