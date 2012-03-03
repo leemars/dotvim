@@ -109,6 +109,40 @@ let Tlist_Exit_OnlyWindow = 1
 let Tlist_Use_Right_Window = 1
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Vim user interface
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" Turn on wild menu
+set wildmenu
+
+" Always show current position
+set ruler
+
+" The commandbar height
+set cmdheight=2
+
+" Change buffer - without saving
+set hidden
+
+" Ignore case when searching
+set ignorecase
+set smartcase
+
+" Highlight search things
+set hlsearch
+
+" Make search act like search in modern browsers
+set incsearch
+
+" Set magic on, for regular expressions
+set magic
+
+" Show matching brackets when text indicator is over them
+set showmatch
+" How many tenths of a second to blink
+set matchtime=2
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Colors and Fonts
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
