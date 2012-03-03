@@ -1,13 +1,11 @@
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Vim configuration skeleton
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
 source ~/.vim/vimrc_skeleton.vim
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Runtime Environment
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
 " Activate pathogen
 runtime bundle/pathogen/autoload/pathogen.vim
 call pathogen#infect()
@@ -16,7 +14,6 @@ call pathogen#helptags()
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => General
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
 " Set how many lines of history Vim has to remember
 set history=1000
 
@@ -32,7 +29,6 @@ autocmd! BufWritePost vimrc source ~/.vim/vimrc
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Vim user interface
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
 " Turn on wild menu
 set wildmenu
 
@@ -66,7 +62,6 @@ set matchtime=2
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Colors and Fonts
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
 " 256 Colors Theme
 if $TERM =~ '-256color$'
   colorscheme wombat256mod
@@ -77,7 +72,6 @@ endif
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Files, backups and undo
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
 " Turn backup off
 set nobackup
 
@@ -88,7 +82,6 @@ set undofile
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Quickfix
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
 map <Leader>cc :botright cope<CR>
 map <Leader>n :cnext<CR>
 map <Leader>p :cprevious<CR>
@@ -97,17 +90,25 @@ map <Leader>p :cprevious<CR>
 " => Plugins
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
+""""""""""""""""""""""""""""""""""""
 " AutoTag
+""""""""""""""""""""""""""""""""""""
 let g:autotagCtagsCmd="ctags --sort=yes --c++-kinds=+lpx --fields=+aiKSz --extra=+q"
 
+""""""""""""""""""""""""""""""""""""
 " Buffer Explorer
+""""""""""""""""""""""""""""""""""""
 let g:bufExplorerDefaultHelp=0
 let g:bufExplorerShowRelativePath=1
 
+""""""""""""""""""""""""""""""""""""
 " Mini Buffer Explorer
+""""""""""""""""""""""""""""""""""""
 let g:miniBufExplModSelTarget=1
 
+""""""""""""""""""""""""""""""""""""
 " Taglist
+""""""""""""""""""""""""""""""""""""
 let Tlist_Show_One_File=1
 let Tlist_Exit_OnlyWindow=1
 let Tlist_Use_Right_Window=1
