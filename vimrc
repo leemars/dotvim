@@ -100,13 +100,6 @@ runtime bundle/pathogen/autoload/pathogen.vim
 call pathogen#infect()
 call pathogen#helptags()
 
-" 256 Colors Theme
-if $TERM =~ '-256color$'
-  colorscheme wombat256mod
-else
-  colorscheme default
-endif
-
 " AutoTag
 let g:autotagCtagsCmd="ctags --sort=yes --c++-kinds=+lpx --fields=+aiKSz --extra=+q"
 
@@ -114,6 +107,17 @@ let g:autotagCtagsCmd="ctags --sort=yes --c++-kinds=+lpx --fields=+aiKSz --extra
 let Tlist_Show_One_File = 1
 let Tlist_Exit_OnlyWindow = 1
 let Tlist_Use_Right_Window = 1
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Colors and Fonts
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" 256 Colors Theme
+if $TERM =~ '-256color$'
+  colorscheme wombat256mod
+else
+  colorscheme default
+endif
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Files, backups and undo
