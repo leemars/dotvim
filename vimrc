@@ -95,6 +95,10 @@ if !exists(":DiffOrig")
 		  \ | wincmd p | diffthis
 endif
 
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Runtime Environment
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
 " Activate pathogen
 runtime bundle/pathogen/autoload/pathogen.vim
 call pathogen#infect()
