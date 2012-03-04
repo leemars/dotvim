@@ -87,6 +87,18 @@ map <Leader>n :cnext<CR>
 map <Leader>p :cprevious<CR>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Encoding
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+set encoding=utf-8
+set fileencodings=ucs-bom,utf-8,gb18030,big5,euc-jp,euc-kr,latin1
+
+" Set terminal encoding to GB18030
+map <Leader>tg :set termencoding=gb18030<CR>
+
+" Set terminal encoding to UTF-8, same as encoding option
+map <Leader>tu :set termencoding=<CR>
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Plugins
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
