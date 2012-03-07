@@ -102,6 +102,18 @@ map <Leader>tg :set termencoding=gb18030<CR>
 map <Leader>tu :set termencoding=<CR>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Status line
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Always show status line
+set laststatus=2
+
+" Use compatible symbols
+let Powerline_symbols="compatible"
+
+" Insert the charcode segment before the fileformt segment
+call Pl#Theme#InsertSegment('charcode', 'before', 'fileformat')
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Plugins
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
