@@ -31,3 +31,6 @@
 [submodule "bundle/syntastic"]
 	path = bundle/syntastic
 	url = https://github.com/scrooloose/syntastic.git
+[submodule "bundle/xoria256.vim"]
+	path = bundle/xoria256.vim
+	url = https://github.com/vim-scripts/xoria256.vim
