@@ -59,6 +59,9 @@ set showmatch
 " How many tenths of a second to blink
 set matchtime=2
 
+" Show line number
+set number
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Colors and Fonts
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
