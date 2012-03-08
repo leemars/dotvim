@@ -97,7 +97,7 @@ set undofile
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Quickfix
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-map <Leader>cc :botright cope<CR>
+map <Leader>cc :botright copen<CR>
 map <Leader>n :cnext<CR>
 map <Leader>p :cprevious<CR>
 
