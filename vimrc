@@ -3,6 +3,7 @@
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 source ~/.vim/vimrc_skeleton.vim
 
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Runtime Environment
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -10,6 +11,7 @@ source ~/.vim/vimrc_skeleton.vim
 runtime bundle/pathogen/autoload/pathogen.vim
 call pathogen#infect()
 call pathogen#helptags()
+
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => General
@@ -25,6 +27,7 @@ map <Leader>e :e! ~/.vim/vimrc<CR>
 
 " When vimrc is edited, reload it
 autocmd! BufWritePost vimrc source ~/.vim/vimrc
+
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Vim user interface
@@ -62,6 +65,7 @@ set matchtime=2
 " Show line number
 set number
 
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Colors and Fonts
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -71,6 +75,7 @@ if $TERM =~ '-256color$'
 else
   colorscheme default
 endif
+
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Files, backups and undo
@@ -82,12 +87,14 @@ set nobackup
 set undodir=~/.vim/undodir
 set undofile
 
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Quickfix
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 map <Leader>cc :botright cope<CR>
 map <Leader>n :cnext<CR>
 map <Leader>p :cprevious<CR>
+
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Encoding
@@ -101,6 +108,7 @@ map <Leader>tg :set termencoding=gb18030<CR>
 " Set terminal encoding to UTF-8, same as encoding option
 map <Leader>tu :set termencoding=<CR>
 
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Status line
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -112,6 +120,7 @@ let Powerline_symbols="compatible"
 
 " Insert the charcode segment before the fileformt segment
 call Pl#Theme#InsertSegment('charcode', 'before', 'fileformat')
+
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Editing mappings
@@ -133,6 +142,7 @@ map <F12> :call DeleteTrailingWS()<CR>
 map <C-H> :bp<CR>
 map <C-L> :bn<CR>
 
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Plugins
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -142,16 +152,19 @@ map <C-L> :bn<CR>
 """"""""""""""""""""""""""""""""""""
 let g:autotagCtagsCmd="ctags --sort=yes --c++-kinds=+lpx --fields=+aiKSz --extra=+q"
 
+
 """"""""""""""""""""""""""""""""""""
 " Buffer Explorer
 """"""""""""""""""""""""""""""""""""
 let g:bufExplorerDefaultHelp=0
 let g:bufExplorerShowRelativePath=1
 
+
 """"""""""""""""""""""""""""""""""""
 " Mini Buffer Explorer
 """"""""""""""""""""""""""""""""""""
 let g:miniBufExplModSelTarget=1
+
 
 """"""""""""""""""""""""""""""""""""
 " Taglist
@@ -159,3 +172,6 @@ let g:miniBufExplModSelTarget=1
 let Tlist_Show_One_File=1
 let Tlist_Exit_OnlyWindow=1
 let Tlist_Use_Right_Window=1
+
+
+" vim: set expandtab tabstop=2 shiftwidth=2:
