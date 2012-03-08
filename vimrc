@@ -114,6 +114,26 @@ let Powerline_symbols="compatible"
 call Pl#Theme#InsertSegment('charcode', 'before', 'fileformat')
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Editing mappings
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Delete trailing whitespace
+function! DeleteTrailingWS()
+  if (&bin > 0)
+    return
+  endif
+
+  let save_cursor = getpos(".")
+  %substitute/\s\+$//ge
+  nohlsearch
+  call setpos(".", save_cursor)
+endfunc
+map <F12> :call DeleteTrailingWS()<CR>
+
+" Switch between buffers
+map <C-H> :bp<CR>
+map <C-L> :bn<CR>
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Plugins
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
