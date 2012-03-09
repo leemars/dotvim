@@ -169,6 +169,14 @@ let g:bufExplorerShowRelativePath=1
 
 
 """"""""""""""""""""""""""""""""""""
+" Gundo
+""""""""""""""""""""""""""""""""""""
+let g:gundo_preview_bottom=1
+let g:gundo_close_on_revert=1
+nnoremap <Leader>gt :GundoToggle<CR>
+
+
+""""""""""""""""""""""""""""""""""""
 " Mini Buffer Explorer
 """"""""""""""""""""""""""""""""""""
 let g:miniBufExplModSelTarget=1
