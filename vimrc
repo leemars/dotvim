@@ -173,6 +173,14 @@ let g:miniBufExplModSelTarget=1
 
 
 """"""""""""""""""""""""""""""""""""
+" Syntastic
+""""""""""""""""""""""""""""""""""""
+let g:syntastic_mode_map = { 'mode': 'active',
+                           \ 'active_filetypes': [],
+                           \ 'passive_filetypes': ['c', 'cpp', ] }
+
+
+""""""""""""""""""""""""""""""""""""
 " Taglist
 """"""""""""""""""""""""""""""""""""
 let Tlist_Show_One_File=1
