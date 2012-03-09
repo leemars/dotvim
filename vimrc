@@ -71,6 +71,8 @@ set matchtime=2
 " Show line number
 set number
 
+" Disable the use of the mouse
+set mouse=
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Colors and Fonts
