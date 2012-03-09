@@ -191,6 +191,13 @@ let g:syntastic_mode_map = { 'mode': 'active',
 
 
 """"""""""""""""""""""""""""""""""""
+" Tagbar
+""""""""""""""""""""""""""""""""""""
+let g:tagbar_iconchars = ['+', '-']
+nnoremap <silent> <Leader>tt :TagbarToggle<CR>
+
+
+""""""""""""""""""""""""""""""""""""
 " Taglist
 """"""""""""""""""""""""""""""""""""
 let Tlist_Show_One_File=1
