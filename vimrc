@@ -162,13 +162,6 @@ let g:autotagCtagsCmd="ctags --sort=yes --c++-kinds=+lpx --fields=+aiKSz --extra
 
 
 """"""""""""""""""""""""""""""""""""
-" Buffer Explorer
-""""""""""""""""""""""""""""""""""""
-let g:bufExplorerDefaultHelp=0
-let g:bufExplorerShowRelativePath=1
-
-
-""""""""""""""""""""""""""""""""""""
 " CtrlP
 """"""""""""""""""""""""""""""""""""
 let g:ctrlp_by_filename=1
