@@ -169,6 +169,15 @@ let g:bufExplorerShowRelativePath=1
 
 
 """"""""""""""""""""""""""""""""""""
+" CtrlP
+""""""""""""""""""""""""""""""""""""
+let g:ctrlp_by_filename=1
+let g:ctrlp_clear_cache_on_exit=0
+let g:ctrlp_cache_dir=$HOME.'/.vim/cache/ctrlp'
+let g:ctrlp_mruf_relative=1
+
+
+""""""""""""""""""""""""""""""""""""
 " Gundo
 """"""""""""""""""""""""""""""""""""
 let g:gundo_preview_bottom=1
