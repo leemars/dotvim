@@ -92,7 +92,7 @@ endif
 set nobackup
 
 " Persistent undo
-set undodir=$HOME/.vim/undodir
+set undodir=$HOME/.vim/tmp/undodir
 set undofile
 
 
@@ -173,7 +173,7 @@ let g:bufExplorerShowRelativePath=1
 """"""""""""""""""""""""""""""""""""
 let g:ctrlp_by_filename=1
 let g:ctrlp_clear_cache_on_exit=0
-let g:ctrlp_cache_dir=$HOME.'/.vim/cache/ctrlp'
+let g:ctrlp_cache_dir=$HOME.'/.vim/tmp/ctrlp'
 let g:ctrlp_mruf_relative=1
 
 
@@ -217,6 +217,7 @@ let Tlist_Use_Right_Window=1
 """"""""""""""""""""""""""""""""""""
 " YankRing
 """"""""""""""""""""""""""""""""""""
+let g:yankring_history_dir=$HOME.'/.vim/tmp/yankring'
 let g:yankring_replace_n_pkey='<C-K>'
 let g:yankring_replace_n_nkey='<C-J>'
 
