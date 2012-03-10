@@ -94,3 +94,7 @@
 	path = bundle/vim-extradite
 	url = https://github.com/int3/vim-extradite.git
 	ignore = dirty
+[submodule "bundle/YankRing.vim"]
+	path = bundle/YankRing.vim
+	url = https://github.com/vim-scripts/YankRing.vim.git
+	ignore = dirty
