@@ -214,4 +214,11 @@ let Tlist_Exit_OnlyWindow=1
 let Tlist_Use_Right_Window=1
 
 
+""""""""""""""""""""""""""""""""""""
+" YankRing
+""""""""""""""""""""""""""""""""""""
+let g:yankring_replace_n_pkey='<C-K>'
+let g:yankring_replace_n_nkey='<C-J>'
+
+
 " vim: set expandtab tabstop=2 shiftwidth=2:
