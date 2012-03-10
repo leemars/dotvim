@@ -207,14 +207,6 @@ nnoremap <silent> <Leader>tt :TagbarToggle<CR>
 
 
 """"""""""""""""""""""""""""""""""""
-" Taglist
-""""""""""""""""""""""""""""""""""""
-let Tlist_Show_One_File=1
-let Tlist_Exit_OnlyWindow=1
-let Tlist_Use_Right_Window=1
-
-
-""""""""""""""""""""""""""""""""""""
 " YankRing
 """"""""""""""""""""""""""""""""""""
 let g:yankring_history_dir=$HOME.'/.vim/tmp/yankring'
