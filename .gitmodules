@@ -78,3 +78,7 @@
 	path = bundle/matchit.zip
 	url = https://github.com/vim-scripts/matchit.zip.git
 	ignore = dirty
+[submodule "bundle/python_match.vim"]
+	path = bundle/python_match.vim
+	url = https://github.com/vim-scripts/python_match.vim.git
+	ignore = dirty
