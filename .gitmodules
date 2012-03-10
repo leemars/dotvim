@@ -82,3 +82,7 @@
 	path = bundle/python_match.vim
 	url = https://github.com/vim-scripts/python_match.vim.git
 	ignore = dirty
+[submodule "bundle/indentpython.vim"]
+	path = bundle/indentpython.vim
+	url = https://github.com/vim-scripts/indentpython.vim.git
+	ignore = dirty
