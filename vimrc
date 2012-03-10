@@ -1,7 +1,7 @@
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Vim configuration skeleton
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-source ~/.vim/vimrc_skeleton.vim
+source $HOME/.vim/vimrc_skeleton.vim
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -23,10 +23,10 @@ set history=1000
 let g:mapleader=","
 
 " Fast editing of the .vimrc
-map <Leader>e :e! ~/.vim/vimrc<CR>
+map <Leader>e :e! $HOME/.vim/vimrc<CR>
 
 " When vimrc is edited, reload it
-autocmd! BufWritePost vimrc source ~/.vim/vimrc
+autocmd! BufWritePost vimrc source $HOME/.vim/vimrc
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -92,7 +92,7 @@ endif
 set nobackup
 
 " Persistent undo
-set undodir=~/.vim/undodir
+set undodir=$HOME/.vim/undodir
 set undofile
 
 
