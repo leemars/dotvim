@@ -98,3 +98,7 @@
 	path = bundle/YankRing.vim
 	url = https://github.com/vim-scripts/YankRing.vim.git
 	ignore = dirty
+[submodule "bundle/YAIFA"]
+	path = bundle/YAIFA
+	url = https://github.com/Raimondi/YAIFA.git
+	ignore = dirty
