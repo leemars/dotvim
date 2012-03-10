@@ -90,3 +90,7 @@
 	path = bundle/pydoc.vim
 	url = https://github.com/fs111/pydoc.vim.git
 	ignore = dirty
+[submodule "bundle/vim-extradite"]
+	path = bundle/vim-extradite
+	url = https://github.com/int3/vim-extradite.git
+	ignore = dirty
