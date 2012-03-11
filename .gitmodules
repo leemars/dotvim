@@ -94,3 +94,7 @@
 	path = bundle/YAIFA
 	url = https://github.com/Raimondi/YAIFA.git
 	ignore = dirty
+[submodule "bundle/molokai"]
+	path = bundle/molokai
+	url = https://github.com/tomasr/molokai.git
+	ignore = dirty
