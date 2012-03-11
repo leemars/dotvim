@@ -74,6 +74,10 @@ set number
 " Disable the use of the mouse
 set mouse=
 
+" Highlight the screen line of the cursor
+set cursorline
+
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Colors and Fonts
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
