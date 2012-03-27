@@ -126,3 +126,7 @@
 	path = bundle/python-mode
 	url = https://github.com/klen/python-mode.git
 	ignore = dirty
+[submodule "bundle/threesome.vim"]
+	path = bundle/threesome.vim
+	url = https://github.com/sjl/threesome.vim.git
+	ignore = dirty
