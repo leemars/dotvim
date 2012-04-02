@@ -130,3 +130,7 @@
 	path = bundle/threesome.vim
 	url = https://github.com/sjl/threesome.vim.git
 	ignore = dirty
+[submodule "bundle/SudoEdit.vim"]
+	path = bundle/SudoEdit.vim
+	url = https://github.com/chrisbra/SudoEdit.vim.git
+	ignore = dirty
