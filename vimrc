@@ -99,6 +99,9 @@ set nobackup
 set undodir=$HOME/.vim/tmp/undodir
 set undofile
 
+" Swap file
+set directory=$HOME/.vim/tmp/swap
+
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Quickfix
