@@ -98,10 +98,10 @@
 	path = bundle/molokai
 	url = https://github.com/tomasr/molokai.git
 	ignore = dirty
-[submodule "bundle/python-syntax.vim"]
-	path = bundle/python-syntax.vim
-	url = https://github.com/me-vlad/python-syntax.vim.git
-	ignore = dirty
+#[submodule "bundle/python-syntax.vim"]
+#	path = bundle/python-syntax.vim
+#	url = https://github.com/me-vlad/python-syntax.vim.git
+#	ignore = dirty
 [submodule "bundle/tabular"]
 	path = bundle/tabular
 	url = https://github.com/godlygeek/tabular.git

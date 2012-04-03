@@ -222,12 +222,6 @@ let g:miniBufExplModSelTarget=1
 
 
 """"""""""""""""""""""""""""""""""""
-" Python Syntax
-""""""""""""""""""""""""""""""""""""
-let python_highlight_all=1
-
-
-""""""""""""""""""""""""""""""""""""
 " Syntastic
 """"""""""""""""""""""""""""""""""""
 let g:syntastic_mode_map = { 'mode': 'active',
