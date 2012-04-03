@@ -96,7 +96,7 @@ endif
 set nobackup
 
 " Persistent undo
-set undodir=$HOME/.vim/tmp/undodir
+set undodir=$HOME/.vim/tmp/undo
 set undofile
 
 " Swap file
