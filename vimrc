@@ -223,6 +223,12 @@ let g:miniBufExplMapWindowNavArrows=1
 
 
 """"""""""""""""""""""""""""""""""""
+" neocomplcache
+""""""""""""""""""""""""""""""""""""
+let g:neocomplcache_enable_at_startup=1
+
+
+""""""""""""""""""""""""""""""""""""
 " Syntastic
 """"""""""""""""""""""""""""""""""""
 let g:syntastic_mode_map = { 'mode': 'active',
