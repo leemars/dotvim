@@ -219,6 +219,7 @@ nnoremap <Leader>gt :GundoToggle<CR>
 " Mini Buffer Explorer
 """"""""""""""""""""""""""""""""""""
 let g:miniBufExplModSelTarget=1
+let g:miniBufExplMapWindowNavArrows=1
 
 
 """"""""""""""""""""""""""""""""""""
