@@ -117,6 +117,21 @@ map <Leader>p :cprevious<CR>
 set encoding=utf-8
 set fileencodings=ucs-bom,utf-8,gb18030,big5,euc-jp,euc-kr,latin1
 
+function! s:CheckGBLocale(locale_var)
+  let locale_var=toupper(a:locale_var)
+  if (match(locale_var, '.GBK$') != -1 || match(locale_var, '.GB18030$') != -1 || match(locale_var, '.GB2312$') != -1)
+    return 1
+  else
+    return 0
+  endif
+endfunction
+
+if (s:CheckGBLocale($LC_ALL) || s:CheckGBLocale($LC_CTYPE) || s:CheckGBLocale($LANG))
+  set termencoding=gb18030
+else
+  set termencoding=
+endif
+
 " Set terminal encoding to GB18030
 map <Leader>tg :set termencoding=gb18030<CR>
 
