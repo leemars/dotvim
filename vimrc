@@ -133,6 +133,9 @@ set laststatus=2
 " Use compatible symbols
 let Powerline_symbols="compatible"
 
+" Override the dividers by ASCII chars
+let g:Powerline_dividers_override=['', '|', '', '|']
+
 " Insert the charcode segment before the fileformt segment
 call Pl#Theme#InsertSegment('charcode', 'before', 'fileformat')
 
