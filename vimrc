@@ -118,7 +118,7 @@ map <Leader>p :cprevious<CR>
 " => Encoding
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set encoding=utf-8
-set fileencodings=ucs-bom,utf-8,gb18030,big5,euc-jp,euc-kr,latin1
+set fileencodings=ucs-bom,utf-8,gbk,euc-jp,euc-kr,big5,gb18030,latin1
 
 function! s:CheckGBLocale(locale_var)
   let locale_var=toupper(a:locale_var)
