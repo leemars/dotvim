@@ -7,6 +7,9 @@ source $HOME/.vim/vimrc_skeleton.vim
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Runtime Environment
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Disabled plugins
+let g:pathogen_disabled=[]
+
 " Activate pathogen
 runtime bundle/pathogen/autoload/pathogen.vim
 call pathogen#infect()
