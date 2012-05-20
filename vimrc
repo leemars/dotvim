@@ -149,7 +149,7 @@ map <Leader>tu :set termencoding=<CR>
 set laststatus=2
 
 " Use compatible symbols
-let Powerline_symbols="compatible"
+let g:Powerline_symbols="compatible"
 
 " Override the dividers by ASCII chars
 let g:Powerline_dividers_override=['', '|', '', '|']
