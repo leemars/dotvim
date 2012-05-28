@@ -74,8 +74,10 @@ set matchtime=2
 " Show line number
 set number
 
-" Disable the use of the mouse
-set mouse=
+" Enable the use of the mouse
+" The xterm handling of the mouse buttons can still be used by keeping
+" the shift key pressed.
+set mouse=a
 
 " Highlight the screen line of the cursor
 set cursorline
