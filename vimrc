@@ -107,6 +107,9 @@ set undofile
 " Swap file
 set directory=$HOME/.vim/tmp/swap
 
+" netrw
+let g:netrw_home=$HOME.'/.vim/tmp/netrw'
+
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Quickfix
