@@ -55,6 +55,8 @@ set hidden
 
 " Ignore case when searching
 set ignorecase
+
+" When searching try to be smart about cases
 set smartcase
 
 " Highlight search things
@@ -68,7 +70,7 @@ set magic
 
 " Show matching brackets when text indicator is over them
 set showmatch
-" How many tenths of a second to blink
+" How many tenths of a second to blink when matching brackets
 set matchtime=2
 
 " Show line number
