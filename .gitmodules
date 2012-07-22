@@ -150,3 +150,7 @@
 	path = bundle/vim-pasta
 	url = https://github.com/sickill/vim-pasta.git
 	ignore = dirty
+[submodule "bundle/mru.vim"]
+	path = bundle/mru.vim
+	url = https://github.com/vim-scripts/mru.vim.git
+	ignore = dirty
