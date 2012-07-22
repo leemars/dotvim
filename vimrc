@@ -84,6 +84,18 @@ set mouse=a
 " Highlight the screen line of the cursor
 set cursorline
 
+" Ignore compiled files
+set wildignore=*.o,*~,*.pyc
+
+" Don't redraw while executing macros (good performance config)
+set lazyredraw
+
+" No annoying sound on errors
+set noerrorbells
+set novisualbell
+set t_vb=
+set timeoutlen=500
+
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Colors and Fonts
