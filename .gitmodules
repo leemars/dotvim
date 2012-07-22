@@ -146,3 +146,7 @@
 	path = bundle/textile.vim
 	url = https://github.com/timcharper/textile.vim.git
 	ignore = dirty
+[submodule "bundle/vim-pasta"]
+	path = bundle/vim-pasta
+	url = https://github.com/sickill/vim-pasta.git
+	ignore = dirty
