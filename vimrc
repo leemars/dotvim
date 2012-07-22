@@ -250,11 +250,15 @@ function! DeleteTrailingWS()
 endfunc
 map <F12> :call DeleteTrailingWS()<CR>
 
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Moving around, tabs, windows and buffers
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Switch between buffers
 map <C-H> :bp<CR>
 map <C-L> :bn<CR>
 
-" Up and down are more logical with g..
+" Treat long lines as break lines (useful when moving around in them)
 nnoremap <silent> k gk
 nnoremap <silent> j gj
 
