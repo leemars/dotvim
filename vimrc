@@ -23,7 +23,7 @@ Bundle 'YAIFA'
 Bundle 'YankRing.vim'
 Bundle 'a.vim'
 Bundle 'ack.vim'
-Bundle 'autofmt'
+" Bundle 'autofmt'
 Bundle 'ctrlp.vim'
 Bundle 'gundo.vim'
 Bundle 'indentpython.vim'
@@ -315,20 +315,22 @@ nnoremap <silent> j gj
 """"""""""""""""""""""""""""""""""""
 " autofmt
 """"""""""""""""""""""""""""""""""""
-" Use uax14
-set formatexpr=autofmt#uax14#formatexpr()
+if s:has_plugin('autofmt')
+    " Use uax14
+    set formatexpr=autofmt#uax14#formatexpr()
 
-" Customize Line Break Property
-let s:unicode = unicode#import()
-let s:orig_prop_line_break = s:unicode.prop_line_break
-function! s:unicode.prop_line_break(char)
-  if a:char == "\u201c" || a:char == "\u2018"
-    return "OP"   " Open Punctuation
-  elseif a:char == "\u201d" || a:char == "\u2019"
-    return "CL"   " Close Punctuation
-  endif
-  return call(s:orig_prop_line_break, [a:char], self)
-endfunction
+    " Customize Line Break Property
+    let s:unicode = unicode#import()
+    let s:orig_prop_line_break = s:unicode.prop_line_break
+    function! s:unicode.prop_line_break(char)
+      if a:char == "\u201c" || a:char == "\u2018"
+        return "OP"   " Open Punctuation
+      elseif a:char == "\u201d" || a:char == "\u2019"
+        return "CL"   " Close Punctuation
+      endif
+      return call(s:orig_prop_line_break, [a:char], self)
+    endfunction
+endif
 
 
 """"""""""""""""""""""""""""""""""""
