@@ -7,13 +7,53 @@ source $HOME/.vim/vimrc_skeleton.vim
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Runtime Environment
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Disabled plugins
-let g:pathogen_disabled=[]
+set nocompatible
+filetype off
 
-" Activate pathogen
-runtime bundle/pathogen/autoload/pathogen.vim
-call pathogen#infect()
-call pathogen#helptags()
+set runtimepath+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+Bundle 'vundle'
+
+Bundle 'AutoTag'
+Bundle 'IndexedSearch'
+Bundle 'SudoEdit.vim'
+Bundle 'VisIncr'
+Bundle 'YAIFA'
+Bundle 'YankRing.vim'
+Bundle 'a.vim'
+Bundle 'ack.vim'
+Bundle 'autofmt'
+Bundle 'ctrlp.vim'
+Bundle 'gundo.vim'
+Bundle 'indentpython.vim'
+Bundle 'jellybeans.vim'
+Bundle 'matchit.zip'
+Bundle 'minibufexpl.vim'
+Bundle 'molokai'
+Bundle 'mru.vim'
+Bundle 'neocomplcache'
+Bundle 'nerdcommenter'
+Bundle 'nerdtree'
+Bundle 'python-mode'
+Bundle 'python_match.vim'
+Bundle 'syntastic'
+Bundle 'tabular'
+Bundle 'tagbar'
+Bundle 'textile.vim'
+Bundle 'threesome.vim'
+Bundle 'vim-colors-solarized'
+Bundle 'vim-extradite'
+Bundle 'vim-fugitive'
+Bundle 'vim-git'
+Bundle 'vim-pasta'
+Bundle 'vim-powerline'
+Bundle 'vim-repeat'
+Bundle 'vim-surround'
+Bundle 'wombat256.vim'
+Bundle 'xoria256.vim'
+
+filetype plugin indent on
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
