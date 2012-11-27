@@ -158,7 +158,3 @@
 	path = bundle/vundle
 	url = https://github.com/gmarik/vundle.git
 	ignore = dirty
-[submodule "bundle/conque"]
-	path = bundle/conque
-	url = https://github.com/jordansissel/conque.git
-	ignore = dirty
