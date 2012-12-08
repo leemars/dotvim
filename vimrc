@@ -169,6 +169,9 @@ set directory=$HOME/.vim/tmp/swap
 " netrw
 let g:netrw_home=$HOME.'/.vim/tmp/netrw'
 
+" viminfo
+set viminfo+=n$HOME/.vim/tmp/viminfo
+
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Text, tab and indent related
