@@ -374,6 +374,12 @@ let g:miniBufExplMapWindowNavArrows=1
 
 
 """"""""""""""""""""""""""""""""""""
+" MRU
+""""""""""""""""""""""""""""""""""""
+let MRU_File=$HOME.'/.vim/tmp/mru_files'
+
+
+""""""""""""""""""""""""""""""""""""
 " neocomplcache
 """"""""""""""""""""""""""""""""""""
 let g:neocomplcache_enable_at_startup=1
