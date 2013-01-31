@@ -28,7 +28,6 @@ Bundle 'ctrlp.vim'
 Bundle 'gundo.vim'
 Bundle 'indentpython.vim'
 Bundle 'jellybeans.vim'
-Bundle 'matchit.zip'
 Bundle 'minibufexpl.vim'
 Bundle 'molokai'
 Bundle 'mru.vim'
@@ -52,6 +51,9 @@ Bundle 'vim-repeat'
 Bundle 'vim-surround'
 Bundle 'wombat256.vim'
 Bundle 'xoria256.vim'
+
+" Use the internal matchit.vim, which is more up to date now
+runtime macros/matchit.vim
 
 filetype plugin indent on
 
