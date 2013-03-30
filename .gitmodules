@@ -158,3 +158,7 @@
 	path = bundle/vundle
 	url = https://github.com/gmarik/vundle.git
 	ignore = dirty
+[submodule "bundle/vim-jinja"]
+	path = bundle/vim-jinja
+	url = https://github.com/lepture/vim-jinja.git
+	ignore = dirty
