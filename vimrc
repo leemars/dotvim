@@ -34,6 +34,7 @@ Bundle 'mru.vim'
 Bundle 'neocomplcache'
 Bundle 'nerdcommenter'
 Bundle 'nerdtree'
+Bundle 'powerline/powerline/bindings/vim'
 " Bundle 'python-mode'
 Bundle 'python_match.vim'
 Bundle 'syntastic'
@@ -47,7 +48,6 @@ Bundle 'vim-fugitive'
 Bundle 'vim-git'
 Bundle 'vim-jinja'
 Bundle 'vim-pasta'
-Bundle 'vim-powerline'
 Bundle 'vim-repeat'
 Bundle 'vim-surround'
 Bundle 'wombat256.vim'
@@ -275,15 +275,6 @@ map <Leader>tu :set termencoding=<CR>
 " Always show status line
 set laststatus=2
 
-" Use compatible symbols
-let g:Powerline_symbols="compatible"
-
-" Override the dividers by ASCII chars
-let g:Powerline_dividers_override=['', '|', '', '|']
-
-" Insert the charcode segment before the fileformt segment
-call Pl#Theme#InsertSegment('charcode', 'before', 'fileformat')
-
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Editing mappings
@@ -395,6 +386,36 @@ let g:neocomplcache_max_list=10
 
 " words less than 3 letters long aren't worth completing
 let g:neocomplcache_auto_completion_start_length=3
+
+
+""""""""""""""""""""""""""""""""""""
+" Powerline
+""""""""""""""""""""""""""""""""""""
+let g:powerline_config_overrides={
+      \   "common": {
+      \     "dividers": {
+      \       "left": {
+      \         "hard": " ",
+      \         "soft": "| "
+      \       },
+      \       "right": {
+      \         "hard": " ",
+      \         "soft": " |"
+      \       }
+      \     },
+      \   },
+      \ }
+
+let g:powerline_theme_overrides__default={
+      \   "segment_data": {
+      \     "branch": {
+      \       "before": ""
+      \     },
+      \     "line_current_symbol": {
+      \       "contents": ""
+      \     },
+      \   },
+      \ }
 
 
 """"""""""""""""""""""""""""""""""""
