@@ -427,6 +427,7 @@ let g:powerline_theme_overrides__default={'segment_data': {'branch': {'before': 
 let g:syntastic_mode_map = { 'mode': 'active',
                            \ 'active_filetypes': [],
                            \ 'passive_filetypes': ['c', 'cpp', ] }
+let g:syntastic_python_checkers = ['flake8']
 
 
 """"""""""""""""""""""""""""""""""""
