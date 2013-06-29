@@ -417,31 +417,8 @@ autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
 """"""""""""""""""""""""""""""""""""
 " Powerline
 """"""""""""""""""""""""""""""""""""
-let g:powerline_config_overrides={
-      \   "common": {
-      \     "dividers": {
-      \       "left": {
-      \         "hard": " ",
-      \         "soft": "| "
-      \       },
-      \       "right": {
-      \         "hard": " ",
-      \         "soft": " |"
-      \       }
-      \     },
-      \   },
-      \ }
-
-let g:powerline_theme_overrides__default={
-      \   "segment_data": {
-      \     "branch": {
-      \       "before": ""
-      \     },
-      \     "line_current_symbol": {
-      \       "contents": ""
-      \     },
-      \   },
-      \ }
+let g:powerline_config_overrides={'common': {'dividers': {'left': {'hard': ' ', 'soft': ''}, 'right': {'hard': ' ', 'soft': ' |'}}}}
+let g:powerline_theme_overrides__default={'segment_data': {'branch': {'before': ''}, 'line_current_symbol': {'contents': ''}}}
 
 
 """"""""""""""""""""""""""""""""""""
