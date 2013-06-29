@@ -374,6 +374,12 @@ let MRU_File=$HOME.'/.vim/tmp/mru_files'
 
 
 """"""""""""""""""""""""""""""""""""
+" NERDTree
+""""""""""""""""""""""""""""""""""""
+nnoremap <Leader>nt :NERDTree<CR>
+
+
+""""""""""""""""""""""""""""""""""""
 " neocomplcache
 """"""""""""""""""""""""""""""""""""
 let g:neocomplcache_enable_at_startup=1
