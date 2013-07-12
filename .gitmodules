@@ -162,3 +162,7 @@
 	path = bundle/powerline
 	url = https://github.com/Lokaltog/powerline.git
 	ignore = dirty
+[submodule "bundle/YouCompleteMe"]
+	path = bundle/YouCompleteMe
+	url = https://github.com/Valloric/YouCompleteMe.git
+	ignore = dirty
