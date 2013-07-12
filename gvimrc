@@ -8,3 +8,5 @@ source $HOME/.vim/gvimrc_skeleton.vim
 " => Colors and Fonts
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 colorscheme wombat256mod
+
+set guifont=Monaco:h14
