@@ -17,6 +17,7 @@ Bundle 'vundle'
 
 Bundle 'AutoTag'
 Bundle 'IndexedSearch'
+Bundle 'PreserveNoEOL'
 Bundle 'SudoEdit.vim'
 Bundle 'VisIncr'
 Bundle 'YAIFA'
@@ -415,6 +416,12 @@ if s:has_plugin('neocomplcache')
   autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
   autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
 endif
+
+
+""""""""""""""""""""""""""""""""""""
+" PreserveNoEOL
+""""""""""""""""""""""""""""""""""""
+let g:PreserveNoEOL = 1
 
 
 """"""""""""""""""""""""""""""""""""
