@@ -166,3 +166,7 @@
 	path = bundle/YouCompleteMe
 	url = https://github.com/Valloric/YouCompleteMe.git
 	ignore = dirty
+[submodule "bundle/PreserveNoEOL"]
+	path = bundle/PreserveNoEOL
+	url = https://github.com/vim-scripts/PreserveNoEOL.git
+	ignore = dirty
