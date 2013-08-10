@@ -377,7 +377,7 @@ let MRU_File=$HOME.'/.vim/tmp/mru_files'
 """"""""""""""""""""""""""""""""""""
 " NERDTree
 """"""""""""""""""""""""""""""""""""
-nnoremap <Leader>nt :NERDTree<CR>
+nnoremap <Leader>nt :NERDTreeToggle<CR>
 
 
 """"""""""""""""""""""""""""""""""""
