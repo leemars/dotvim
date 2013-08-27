@@ -36,7 +36,7 @@ Bundle 'mru.vim'
 " Bundle 'neocomplcache'
 Bundle 'nerdcommenter'
 Bundle 'nerdtree'
-Bundle 'powerline/powerline/bindings/vim'
+" Bundle 'powerline/powerline/bindings/vim'
 " Bundle 'python-mode'
 Bundle 'python_match.vim'
 Bundle 'syntastic'
@@ -44,6 +44,7 @@ Bundle 'tabular'
 Bundle 'tagbar'
 Bundle 'textile.vim'
 Bundle 'threesome.vim'
+Bundle 'vim-airline'
 Bundle 'vim-coffee-script'
 Bundle 'vim-colors-solarized'
 Bundle 'vim-extradite'
@@ -311,6 +312,15 @@ nnoremap <silent> j gj
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Plugins
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+""""""""""""""""""""""""""""""""""""
+" airline
+""""""""""""""""""""""""""""""""""""
+if s:has_plugin('vim-airline')
+    let g:airline_left_sep=''
+    let g:airline_right_sep=''
+    let g:airline_theme='powerlineish'
+endif
 
 """"""""""""""""""""""""""""""""""""
 " autofmt
