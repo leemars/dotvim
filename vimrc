@@ -395,7 +395,7 @@ nnoremap <Leader>nt :NERDTreeToggle<CR>
 """"""""""""""""""""""""""""""""""""
 " neocomplcache
 """"""""""""""""""""""""""""""""""""
-if s:has_plugin('neocomplcache') 
+if s:has_plugin('neocomplcache')
   set completeopt-=preview
 
   let g:neocomplcache_enable_at_startup=1
@@ -467,7 +467,7 @@ let g:yankring_replace_n_nkey='<C-J>'
 
 
 """"""""""""""""""""""""""""""""""""
-" YouCompleteMe 
+" YouCompleteMe
 """"""""""""""""""""""""""""""""""""
 let g:ycm_confirm_extra_conf = 0
 
