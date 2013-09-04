@@ -140,7 +140,7 @@ set cursorline
 set wildignore=*.o,*~,*.pyc
 
 " Don't redraw while executing macros (good performance config)
-set lazyredraw
+" set lazyredraw
 
 " No annoying sound on errors
 set noerrorbells
