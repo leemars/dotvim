@@ -240,7 +240,7 @@ vnoremap <silent> <Leader>r :call VisualSelection('replace')<CR>
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Quickfix
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-map <Leader>cc :botright copen<CR>
+map <Leader>co :botright copen<CR>
 map <Leader>n :cnext<CR>
 map <Leader>p :cprevious<CR>
 
