@@ -26,7 +26,7 @@ Bundle 'YouCompleteMe'
 Bundle 'a.vim'
 Bundle 'ack.vim'
 Bundle 'ctrlp.vim'
-Bundle 'gundo.vim'
+" Bundle 'gundo.vim'
 Bundle 'indentpython.vim'
 Bundle 'jellybeans.vim'
 Bundle 'minibufexpl.vim'
@@ -42,6 +42,7 @@ Bundle 'tabular'
 Bundle 'tagbar'
 Bundle 'textile.vim'
 Bundle 'threesome.vim'
+Bundle 'undotree'
 Bundle 'vim-airline'
 Bundle 'vim-coffee-script'
 Bundle 'vim-colors-solarized'
@@ -347,11 +348,16 @@ let g:ctrlp_user_command={
 
 
 """"""""""""""""""""""""""""""""""""
-" Gundo
+" Gundo/undotree
 """"""""""""""""""""""""""""""""""""
-let g:gundo_preview_bottom=1
-let g:gundo_close_on_revert=1
-nnoremap <Leader>gt :GundoToggle<CR>
+if s:has_plugin('gundo.vim')
+  let g:gundo_preview_bottom=1
+  let g:gundo_close_on_revert=1
+  nnoremap <Leader>gt :GundoToggle<CR>
+endif
+if s:has_plugin('undotree')
+  nnoremap <Leader>ut :UndotreeToggle<CR>
+endif
 
 
 """"""""""""""""""""""""""""""""""""
