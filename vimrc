@@ -36,7 +36,6 @@ Bundle 'mru.vim'
 " Bundle 'neocomplcache'
 Bundle 'nerdcommenter'
 Bundle 'nerdtree'
-" Bundle 'powerline/powerline/bindings/vim'
 " Bundle 'python-mode'
 Bundle 'python_match.vim'
 Bundle 'syntastic'
@@ -436,13 +435,6 @@ endif
 " PreserveNoEOL
 """"""""""""""""""""""""""""""""""""
 let g:PreserveNoEOL = 1
-
-
-""""""""""""""""""""""""""""""""""""
-" Powerline
-""""""""""""""""""""""""""""""""""""
-let g:powerline_config_overrides={'common': {'dividers': {'left': {'hard': ' ', 'soft': ''}, 'right': {'hard': ' ', 'soft': ' |'}}}}
-let g:powerline_theme_overrides__default={'segment_data': {'branch': {'before': ''}, 'line_current_symbol': {'contents': ''}}}
 
 
 """"""""""""""""""""""""""""""""""""
