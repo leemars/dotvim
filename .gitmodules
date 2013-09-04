@@ -126,10 +126,6 @@
 	path = bundle/SudoEdit.vim
 	url = https://github.com/chrisbra/SudoEdit.vim.git
 	ignore = dirty
-[submodule "bundle/autofmt"]
-	path = bundle/autofmt
-	url = https://github.com/vim-scripts/autofmt.git
-	ignore = dirty
 [submodule "bundle/VisIncr"]
 	path = bundle/VisIncr
 	url = https://github.com/vim-scripts/VisIncr.git
