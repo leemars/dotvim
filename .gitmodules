@@ -174,3 +174,7 @@
 	path = bundle/vim-gitgutter
 	url = https://github.com/airblade/vim-gitgutter.git
 	ignore = dirty
+[submodule "bundle/undotree"]
+	path = bundle/undotree
+	url = https://github.com/mbbill/undotree.git
+	ignore = dirty
