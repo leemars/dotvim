@@ -178,3 +178,7 @@
 	path = bundle/undotree
 	url = https://github.com/mbbill/undotree.git
 	ignore = dirty
+[submodule "bundle/emmet-vim"]
+	path = bundle/emmet-vim
+	url = https://github.com/mattn/emmet-vim.git
+	ignore = dirty
