@@ -182,3 +182,7 @@
 	path = bundle/emmet-vim
 	url = https://github.com/mattn/emmet-vim.git
 	ignore = dirty
+[submodule "bundle/vim-signify"]
+	path = bundle/vim-signify
+	url = https://github.com/mhinz/vim-signify.git
+	ignore = dirty
