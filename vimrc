@@ -31,7 +31,8 @@ Bundle 'jellybeans.vim'
 Bundle 'minibufexpl.vim'
 Bundle 'molokai'
 Bundle 'mru.vim'
-Bundle 'neocomplcache'
+" Bundle 'neocomplcache'
+Bundle 'neocomplete.vim'
 Bundle 'nerdcommenter'
 Bundle 'nerdtree'
 Bundle 'python_match.vim'
@@ -416,6 +417,14 @@ if s:has_plugin('neocomplcache')
   autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
   autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
   autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
+endif
+
+
+""""""""""""""""""""""""""""""""""""
+" neocomplete
+""""""""""""""""""""""""""""""""""""
+if s:has_plugin('neocomplete.vim')
+  let g:neocomplete#enable_at_startup=1
 endif
 
 
