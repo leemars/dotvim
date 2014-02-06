@@ -326,23 +326,27 @@ endif
 """"""""""""""""""""""""""""""""""""
 " AutoTag
 """"""""""""""""""""""""""""""""""""
-let g:autotagCtagsCmd="ctags --sort=yes --c++-kinds=+lpx --fields=+aiKSz --extra=+q"
+if s:has_plugin('AutoTag')
+  let g:autotagCtagsCmd="ctags --sort=yes --c++-kinds=+lpx --fields=+aiKSz --extra=+q"
+endif
 
 
 """"""""""""""""""""""""""""""""""""
 " CtrlP
 """"""""""""""""""""""""""""""""""""
-let g:ctrlp_by_filename=1
-let g:ctrlp_clear_cache_on_exit=0
-let g:ctrlp_cache_dir=$HOME.'/.vim/tmp/ctrlp'
-let g:ctrlp_mruf_relative=1
-let g:ctrlp_user_command={
-  \ 'types': {
-    \ 1: ['.git/', 'cd %s && git ls-files'],
-    \ 2: ['.hg/', 'hg --cwd %s locate -I .'],
-    \ },
-  \ 'fallback': 'find %s -type f',
-  \ }
+if s:has_plugin('ctrlp.vim')
+  let g:ctrlp_by_filename=1
+  let g:ctrlp_clear_cache_on_exit=0
+  let g:ctrlp_cache_dir=$HOME.'/.vim/tmp/ctrlp'
+  let g:ctrlp_mruf_relative=1
+  let g:ctrlp_user_command={
+        \ 'types': {
+        \   1: ['.git/', 'cd %s && git ls-files'],
+        \   2: ['.hg/', 'hg --cwd %s locate -I .'],
+        \ },
+        \ 'fallback': 'find %s -type f',
+        \ }
+endif
 
 
 """"""""""""""""""""""""""""""""""""
@@ -356,20 +360,26 @@ endif
 """"""""""""""""""""""""""""""""""""
 " Mini Buffer Explorer
 """"""""""""""""""""""""""""""""""""
-let g:miniBufExplModSelTarget=1
-let g:miniBufExplMapWindowNavArrows=1
+if s:has_plugin('minibufexpl.vim')
+  let g:miniBufExplModSelTarget=1
+  let g:miniBufExplMapWindowNavArrows=1
+endif
 
 
 """"""""""""""""""""""""""""""""""""
 " MRU
 """"""""""""""""""""""""""""""""""""
-let MRU_File=$HOME.'/.vim/tmp/mru_files'
+if s:has_plugin('mru.vim')
+  let MRU_File=$HOME.'/.vim/tmp/mru_files'
+endif
 
 
 """"""""""""""""""""""""""""""""""""
 " NERDTree
 """"""""""""""""""""""""""""""""""""
-nnoremap <Leader>nt :NERDTreeToggle<CR>
+if s:has_plugin('nerdtree')
+  nnoremap <Leader>nt :NERDTreeToggle<CR>
+endif
 
 
 """"""""""""""""""""""""""""""""""""
@@ -412,31 +422,41 @@ endif
 """"""""""""""""""""""""""""""""""""
 " PreserveNoEOL
 """"""""""""""""""""""""""""""""""""
-let g:PreserveNoEOL = 1
+if s:has_plugin('PreserveNoEOL')
+  let g:PreserveNoEOL=1
+endif
 
 
 """"""""""""""""""""""""""""""""""""
 " Syntastic
 """"""""""""""""""""""""""""""""""""
-let g:syntastic_mode_map = { 'mode': 'active',
-                           \ 'active_filetypes': [],
-                           \ 'passive_filetypes': ['c', 'cpp', ] }
-let g:syntastic_python_checkers = ['flake8']
+if s:has_plugin('syntastic')
+  let g:syntastic_mode_map={
+        \ 'mode': 'active',
+        \ 'active_filetypes': [],
+        \ 'passive_filetypes': ['c', 'cpp', ]
+        \ }
+  let g:syntastic_python_checkers=['flake8']
+endif
 
 
 """"""""""""""""""""""""""""""""""""
 " Tagbar
 """"""""""""""""""""""""""""""""""""
-let g:tagbar_iconchars = ['+', '-']
-nnoremap <silent> <Leader>tt :TagbarToggle<CR>
+if s:has_plugin('tagbar')
+  let g:tagbar_iconchars=['+', '-']
+  nnoremap <silent> <Leader>tt :TagbarToggle<CR>
+endif
 
 
 """"""""""""""""""""""""""""""""""""
 " YankRing
 """"""""""""""""""""""""""""""""""""
-let g:yankring_history_dir=$HOME.'/.vim/tmp/yankring'
-let g:yankring_replace_n_pkey='<C-K>'
-let g:yankring_replace_n_nkey='<C-J>'
+if s:has_plugin('YankRing.vim')
+  let g:yankring_history_dir=$HOME.'/.vim/tmp/yankring'
+  let g:yankring_replace_n_pkey='<C-K>'
+  let g:yankring_replace_n_nkey='<C-J>'
+endif
 
 
 " vim: set expandtab tabstop=2 shiftwidth=2:
