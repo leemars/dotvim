@@ -170,3 +170,7 @@
 	path = bundle/vim-signify
 	url = https://github.com/mhinz/vim-signify.git
 	ignore = dirty
+[submodule "bundle/vimproc.vim"]
+	path = bundle/vimproc.vim
+	url = https://github.com/Shougo/vimproc.vim.git
+	ignore = dirty
