@@ -30,10 +30,6 @@
 	path = bundle/xoria256.vim
 	url = https://github.com/vim-scripts/xoria256.vim
 	ignore = dirty
-[submodule "bundle/gundo.vim"]
-	path = bundle/gundo.vim
-	url = https://github.com/sjl/gundo.vim.git
-	ignore = dirty
 [submodule "bundle/tagbar"]
 	path = bundle/tagbar
 	url = https://github.com/majutsushi/tagbar.git

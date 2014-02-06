@@ -26,7 +26,6 @@ Bundle 'a.vim'
 Bundle 'ack.vim'
 Bundle 'ctrlp.vim'
 Bundle 'emmet-vim'
-" Bundle 'gundo.vim'
 Bundle 'indentpython.vim'
 Bundle 'jellybeans.vim'
 Bundle 'minibufexpl.vim'
@@ -347,13 +346,8 @@ let g:ctrlp_user_command={
 
 
 """"""""""""""""""""""""""""""""""""
-" Gundo/undotree
+" undotree
 """"""""""""""""""""""""""""""""""""
-if s:has_plugin('gundo.vim')
-  let g:gundo_preview_bottom=1
-  let g:gundo_close_on_revert=1
-  nnoremap <Leader>gt :GundoToggle<CR>
-endif
 if s:has_plugin('undotree')
   nnoremap <Leader>ut :UndotreeToggle<CR>
 endif
