@@ -22,7 +22,6 @@ Bundle 'SudoEdit.vim'
 Bundle 'VisIncr'
 Bundle 'YAIFA'
 Bundle 'YankRing.vim'
-" Bundle 'YouCompleteMe'
 Bundle 'a.vim'
 Bundle 'ack.vim'
 Bundle 'ctrlp.vim'
@@ -445,12 +444,6 @@ nnoremap <silent> <Leader>tt :TagbarToggle<CR>
 let g:yankring_history_dir=$HOME.'/.vim/tmp/yankring'
 let g:yankring_replace_n_pkey='<C-K>'
 let g:yankring_replace_n_nkey='<C-J>'
-
-
-""""""""""""""""""""""""""""""""""""
-" YouCompleteMe
-""""""""""""""""""""""""""""""""""""
-let g:ycm_confirm_extra_conf = 0
 
 
 " vim: set expandtab tabstop=2 shiftwidth=2:
