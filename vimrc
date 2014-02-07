@@ -28,6 +28,7 @@ Bundle 'ctrlp.vim'
 Bundle 'emmet-vim'
 Bundle 'indentpython.vim'
 Bundle 'jellybeans.vim'
+Bundle 'jedi-vim'
 Bundle 'minibufexpl.vim'
 Bundle 'molokai'
 Bundle 'mru.vim'
@@ -468,5 +469,13 @@ if s:has_plugin('YankRing.vim')
   let g:yankring_replace_n_nkey='<C-J>'
 endif
 
+
+""""""""""""""""""""""""""""""""""""
+" jedi-vim
+""""""""""""""""""""""""""""""""""""
+if s:has_plugin('jedi-vim')
+  let g:jedi#use_tabs_not_buffers=0
+  let g:jedi#popup_select_first=0
+endif
 
 " vim: set expandtab tabstop=2 shiftwidth=2:
