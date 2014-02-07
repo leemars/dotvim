@@ -53,6 +53,7 @@ Bundle 'vim-pasta'
 Bundle 'vim-repeat'
 Bundle 'vim-signify'
 Bundle 'vim-surround'
+Bundle 'vimproc.vim'
 Bundle 'wombat256.vim'
 Bundle 'xoria256.vim'
 
