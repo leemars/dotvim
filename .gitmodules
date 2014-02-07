@@ -178,3 +178,7 @@
 	path = bundle/neocomplete.vim
 	url = https://github.com/Shougo/neocomplete.vim.git
 	ignore = dirty
+[submodule "bundle/jedi-vim"]
+	path = bundle/jedi-vim
+	url = https://github.com/davidhalter/jedi-vim.git
+	ignore = dirty
