@@ -482,4 +482,10 @@ if s:has_plugin('jedi-vim')
   let g:jedi#popup_select_first=0
 endif
 
+
+""""""""""""""""""""""""""""""""""""
+" SudoEdit
+""""""""""""""""""""""""""""""""""""
+let g:sudo_tee='/usr/bin/tee'
+
 " vim: set expandtab tabstop=2 shiftwidth=2:
