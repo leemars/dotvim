@@ -487,5 +487,6 @@ endif
 " SudoEdit
 """"""""""""""""""""""""""""""""""""
 let g:sudo_tee='/usr/bin/tee'
+let g:sudoAuth='sudo'
 
 " vim: set expandtab tabstop=2 shiftwidth=2:
