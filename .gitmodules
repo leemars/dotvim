@@ -106,10 +106,6 @@
 	path = bundle/nerdcommenter
 	url = https://github.com/scrooloose/nerdcommenter.git
 	ignore = dirty
-[submodule "bundle/neocomplcache"]
-	path = bundle/neocomplcache
-	url = https://github.com/Shougo/neocomplcache.git
-	ignore = dirty
 [submodule "bundle/threesome.vim"]
 	path = bundle/threesome.vim
 	url = https://github.com/sjl/threesome.vim.git
