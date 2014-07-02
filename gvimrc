@@ -9,4 +9,4 @@ source $HOME/.vim/gvimrc_skeleton.vim
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 colorscheme wombat256mod
 
-set guifont=Monaco:h14
+set guifont=Monaco:h12
