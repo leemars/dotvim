@@ -52,6 +52,7 @@ Bundle 'vimproc.vim'
 Bundle 'textile.vim'
 Bundle 'vim-coffee-script'
 Bundle 'vim-git'
+Bundle 'vim-javascript'
 Bundle 'vim-jinja'
 
 " Colorscheme
