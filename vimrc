@@ -319,6 +319,14 @@ nnoremap <silent> j gj
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 """"""""""""""""""""""""""""""""""""
+" ack
+""""""""""""""""""""""""""""""""""""
+if s:has_plugin('ack.vim')
+  let g:ackprg='ag -s --nocolor --nogroup --column --smart-case --follow'
+endif
+
+
+""""""""""""""""""""""""""""""""""""
 " airline
 """"""""""""""""""""""""""""""""""""
 if s:has_plugin('vim-airline')
