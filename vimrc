@@ -486,8 +486,16 @@ endif
 " jedi-vim
 """"""""""""""""""""""""""""""""""""
 if s:has_plugin('jedi-vim')
-  let g:jedi#use_tabs_not_buffers=0
-  let g:jedi#popup_select_first=0
+  if s:has_plugin('neocomplete')
+    autocmd FileType python setlocal omnifunc=jedi#completions
+    let g:jedi#completions_enabled = 0
+    let g:jedi#auto_vim_configuration = 0
+    if !exists('g:neocomplete#force_omni_input_patterns')
+      let g:neocomplete#force_omni_input_patterns = {}
+    endif
+    let g:neocomplete#force_omni_input_patterns.python =
+          \ '\%([^. \t]\.\|^\s*@\|^\s*from\s.\+import \|^\s*from \|^\s*import \)\w*'
+  endif
 endif
 
 
