@@ -164,12 +164,17 @@ set foldcolumn=1
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Colors and Fonts
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+set background=dark
+
 " 256 Colors Theme
-if $TERM =~ '-256color$'
-  colorscheme wombat256mod
-else
-  colorscheme default
-endif
+try
+    if $TERM =~ '-256color$'
+      colorscheme wombat256mod
+    else
+      colorscheme default
+    endif
+catch
+endtry
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
