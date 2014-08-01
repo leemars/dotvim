@@ -211,6 +211,10 @@ set shiftwidth=4
 set tabstop=4
 set softtabstop=4
 
+" Linebreak on 500 characters
+set linebreak
+set textwidth=500
+
 " Auto indent
 set autoindent
 
