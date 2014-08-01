@@ -80,6 +80,7 @@ endfunction
 set history=1000
 
 " With a map leader it's possible to do extra key combinations
+let mapleader=","
 let g:mapleader=","
 
 " Fast editing of the .vimrc
