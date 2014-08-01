@@ -93,6 +93,9 @@ autocmd! BufWritePost vimrc source $HOME/.vim/vimrc
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Vim user interface
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Set 7 lines to the cursor - when moving vertically using j/k
+set scrolloff=7
+
 " Turn on wild menu
 set wildmenu
 
