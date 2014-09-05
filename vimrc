@@ -27,10 +27,10 @@ Bundle 'ack.vim'
 Bundle 'ctrlp.vim'
 Bundle 'emmet-vim'
 Bundle 'indentpython.vim'
-" Bundle 'jedi-vim'
+Bundle 'jedi-vim'
 Bundle 'minibufexpl.vim'
 Bundle 'mru.vim'
-Bundle 'neocomplete.vim'
+" Bundle 'neocomplete.vim'
 Bundle 'nerdcommenter'
 Bundle 'nerdtree'
 Bundle 'python_match.vim'
@@ -466,6 +466,7 @@ endif
 " jedi-vim
 """"""""""""""""""""""""""""""""""""
 if s:has_plugin('jedi-vim')
+  set completeopt-=preview
   if s:has_plugin('neocomplete')
     autocmd FileType python setlocal omnifunc=jedi#completions
     let g:jedi#completions_enabled = 0
