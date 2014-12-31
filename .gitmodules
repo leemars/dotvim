@@ -182,3 +182,7 @@
 	path = bundle/vim-javascript
 	url = https://github.com/pangloss/vim-javascript
 	ignore = dirty
+[submodule "bundle/ctrlp-funky"]
+	path = bundle/ctrlp-funky
+	url = git://github.com/tacahiroy/ctrlp-funky.git
+	ignore = dirty
