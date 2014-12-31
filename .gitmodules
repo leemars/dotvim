@@ -186,3 +186,7 @@
 	path = bundle/ctrlp-funky
 	url = git://github.com/tacahiroy/ctrlp-funky.git
 	ignore = dirty
+[submodule "bundle/ir_black"]
+	path = bundle/ir_black
+	url = https://github.com/twerth/ir_black.git
+	ignore = dirty
