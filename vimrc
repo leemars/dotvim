@@ -56,6 +56,7 @@ Bundle 'vim-javascript'
 Bundle 'vim-jinja'
 
 " Colorscheme
+Bundle 'ir_black'
 Bundle 'jellybeans.vim'
 Bundle 'molokai'
 Bundle 'vim-colors-solarized'
