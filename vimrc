@@ -381,6 +381,15 @@ endif
 
 
 """"""""""""""""""""""""""""""""""""
+" ctrlp-funky
+""""""""""""""""""""""""""""""""""""
+if s:has_plugin('ctrlp.vim') && s:has_plugin('ctrlp-funky')
+    let g:ctrlp_extensions=['funky']
+    let g:ctrlp_funky_syntax_highlight=1
+endif
+
+
+""""""""""""""""""""""""""""""""""""
 " undotree
 """"""""""""""""""""""""""""""""""""
 if s:has_plugin('undotree')
