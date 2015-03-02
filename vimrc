@@ -130,8 +130,8 @@ set wildmode=longest:full,full
 " Always show current position
 set ruler
 
-" The commandbar height
-set cmdheight=2
+" " The commandbar height
+" set cmdheight=2
 
 " Change buffer - without saving
 set hidden
@@ -179,8 +179,8 @@ set novisualbell
 set t_vb=
 set timeoutlen=500
 
-" Add a bit extra margin to the left
-set foldcolumn=1
+" " Add a bit extra margin to the left
+" set foldcolumn=1
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
