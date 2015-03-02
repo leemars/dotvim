@@ -91,6 +91,26 @@ map <Leader>e :e! $HOME/.vim/vimrc<CR>
 " When vimrc is edited, reload it
 autocmd! BufWritePost vimrc source $HOME/.vim/vimrc
 
+" From spf13
+"
+if has('clipboard')
+    if has('unnamedplus')  " When possible use + register for copy-paste
+        set clipboard=unnamed,unnamedplus
+    else         " On mac and Windows, use * register for copy-paste
+        set clipboard=unnamed
+    endif
+endif
+
+" Instead of reverting the cursor to the last position in the buffer, we
+" set it to the first line when editing a git commit message
+au FileType gitcommit au! BufEnter COMMIT_EDITMSG call setpos('.', [0, 1, 1, 0])
+
+set nojoinspaces                " Prevents inserting two spaces after punctuation on a join (J)
+
+" Visual shifting (does not exit Visual mode)
+vnoremap < <gv
+vnoremap > >gv
+
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Vim user interface
