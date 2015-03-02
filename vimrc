@@ -171,12 +171,18 @@ set background=dark
 " 256 Colors Theme
 try
     if $TERM =~ '-256color$'
+      "colorscheme ir_black
       colorscheme wombat256mod
+      "colorscheme molokai
+      "colorscheme xoria256
+      "colorscheme jellybeans
     else
       colorscheme default
     endif
 catch
 endtry
+
+highlight clear SignColumn      " SignColumn should match background
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
