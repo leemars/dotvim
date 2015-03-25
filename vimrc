@@ -70,7 +70,7 @@ runtime macros/matchit.vim
 filetype plugin indent on
 
 " A helper function to check whether a plugin is enabled
-let s:enabled_plugins = map(copy(g:bundles), 'v:val.name_spec')
+let s:enabled_plugins = map(copy(g:vundle#bundles), 'v:val.name_spec')
 function! s:has_plugin(name)
   return (index(s:enabled_plugins, a:name) != -1)
 endfunction
