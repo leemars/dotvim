@@ -56,6 +56,7 @@ Plugin 'vim-coffee-script'
 Plugin 'vim-git'
 Plugin 'vim-javascript'
 Plugin 'vim-jinja'
+Plugin 'vim-less'
 
 " Colorscheme
 Plugin 'ir_black'
