@@ -16,6 +16,9 @@ endif
 
 call plug#begin('~/.vim/plugged')
 
+" colorscheme
+Plug 'vim-scripts/wombat256.vim'
+
 " status/tabline
 Plug 'vim-airline/vim-airline' | Plug 'vim-airline/vim-airline-themes'
 
@@ -25,6 +28,19 @@ call plug#end()
 function! s:has_plugged(name)
   return (has_key(g:plugs, a:name) != 0)
 endfunction
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Colors and Fonts
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+set background=dark
+
+" colorscheme
+colorscheme wombat256mod
+
+" SignColumn should match background
+highlight clear SignColumn      
+
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Plugins
