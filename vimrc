@@ -22,6 +22,9 @@ Plug 'vim-scripts/wombat256.vim'
 " status/tabline
 Plug 'vim-airline/vim-airline' | Plug 'vim-airline/vim-airline-themes'
 
+" Preserve missing EOL at the end of text files
+Plug 'vim-scripts/PreserveNoEOL'
+
 call plug#end()
 
 " A helper function to check whether a plugin is enabled
@@ -132,6 +135,13 @@ nnoremap <silent> j gj
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Plugins
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+"""""""""""""""""""""""""""""""""""""""
+" PreserveNoEOL
+"""""""""""""""""""""""""""""""""""""""
+if s:has_plugged('PreserveNoEOL')
+  let g:PreserveNoEOL=1
+endif
 
 """""""""""""""""""""""""""""""""""""""
 " vim-airline
