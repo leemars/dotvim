@@ -31,6 +31,9 @@ Plug 'vim-scripts/YankRing.vim'
 " Show a diff using Vim its sign column
 Plug 'mhinz/vim-signify'
 
+" Using the jedi autocompletion library for VIM
+Plug 'davidhalter/jedi-vim', { 'for': 'python' }
+
 call plug#end()
 
 " A helper function to check whether a plugin is enabled
