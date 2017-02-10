@@ -16,3 +16,8 @@ endif
 
 call plug#begin('~/.vim/plugged')
 call plug#end()
+
+" A helper function to check whether a plugin is enabled
+function! s:has_plugged(name)
+  return (has_key(g:plugs, a:name) != 0)
+endfunction
