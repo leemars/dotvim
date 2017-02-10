@@ -43,6 +43,18 @@ highlight clear SignColumn
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Moving around lines, tabs, windows and buffers
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Switch between buffers
+map <C-H> :bp<CR>
+map <C-L> :bn<CR>
+
+" Treat long lines as break lines (useful when moving around in them)
+nnoremap <silent> k gk
+nnoremap <silent> j gj
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Plugins
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
