@@ -37,6 +37,9 @@ Plug 'davidhalter/jedi-vim', { 'for': 'python' }
 " Intelligently reopen files at your last edit position in Vim
 Plug 'dietsche/vim-lastplace'
 
+" Vim plugin for detecting indentation of source code
+Plug 'myint/indent-finder'
+
 call plug#end()
 
 " A helper function to check whether a plugin is enabled
