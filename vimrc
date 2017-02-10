@@ -25,6 +25,9 @@ Plug 'vim-airline/vim-airline' | Plug 'vim-airline/vim-airline-themes'
 " Preserve missing EOL at the end of text files
 Plug 'vim-scripts/PreserveNoEOL'
 
+" Maintains a history of previous yanks, changes and deletes
+Plug 'vim-scripts/YankRing.vim'
+
 call plug#end()
 
 " A helper function to check whether a plugin is enabled
@@ -153,4 +156,14 @@ if s:has_plugged('vim-airline')
   let g:airline_right_alt_sep=''
   let g:airline_theme='powerlineish'
   let g:airline#extensions#tabline#enabled=1
+endif
+
+
+""""""""""""""""""""""""""""""""""""
+" YankRing
+""""""""""""""""""""""""""""""""""""
+if s:has_plugged('YankRing.vim')
+  let g:yankring_history_dir=$HOME.'/.vim/tmp/yankring'
+  let g:yankring_replace_n_pkey='<C-K>'
+  let g:yankring_replace_n_nkey='<C-J>'
 endif
