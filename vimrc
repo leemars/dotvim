@@ -97,6 +97,26 @@ colorscheme wombat256mod
 highlight clear SignColumn      
 
 
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Files, backups and undo
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Turn backup off
+set nobackup
+
+" Persistent undo
+set undodir=~/.vim/tmp/undo
+set undofile
+
+" Swap file
+set directory=~/.vim/tmp/swap
+
+" netrw
+let g:netrw_home=$HOME.'/.vim/tmp/netrw'
+
+" viminfo
+set viminfo+=n~/.vim/tmp/viminfo
+
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Moving around lines, tabs, windows and buffers
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
