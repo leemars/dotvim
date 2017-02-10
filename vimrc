@@ -40,6 +40,9 @@ Plug 'dietsche/vim-lastplace'
 " Vim plugin for detecting indentation of source code
 Plug 'myint/indent-finder'
 
+" Asynchronous Lint Engine
+Plug 'w0rp/ale'
+
 call plug#end()
 
 " A helper function to check whether a plugin is enabled
