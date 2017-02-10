@@ -30,6 +30,61 @@ function! s:has_plugged(name)
 endfunction
 
 
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Vim user interface
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Turn on wild menu
+set wildmenu
+
+" Always show current position
+set ruler
+
+" Change buffer - without saving
+set hidden
+
+" Ignore case when searching
+set ignorecase
+
+" When searching try to be smart about cases
+set smartcase
+
+" Highlight search things
+set hlsearch
+
+" Make search act like search in modern browsers
+set incsearch
+
+" Set magic on, for regular expressions
+set magic
+
+" Show matching brackets when text indicator is over them
+set showmatch
+" How many tenths of a second to blink when matching brackets
+set matchtime=2
+
+" Show line number
+set number
+
+" Enable the use of the mouse
+" The xterm handling of the mouse buttons can still be used by keeping
+" the shift key pressed.
+set mouse=a
+
+" Highlight the screen line of the cursor
+set cursorline
+
+" Ignore compiled files
+set wildignore=*.o,*~,*.pyc
+
+" Don't redraw while executing macros (good performance config)
+set lazyredraw
+
+" No annoying sound on errors
+set noerrorbells
+set novisualbell
+set t_vb=
+
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Colors and Fonts
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
