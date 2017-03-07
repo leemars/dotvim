@@ -34,6 +34,9 @@ Plug 'mhinz/vim-signify'
 " Using the jedi autocompletion library for VIM
 Plug 'davidhalter/jedi-vim', { 'for': 'python' }
 
+" Vim python-mode. PyLint, Rope, Pydoc, breakpoints from box.
+Plug 'python-mode/python-mode', { 'for': 'python' }
+
 " Intelligently reopen files at your last edit position in Vim
 Plug 'dietsche/vim-lastplace'
 
