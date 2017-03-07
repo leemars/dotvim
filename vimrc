@@ -153,7 +153,7 @@ set termguicolors
 colorscheme wombat256mod
 
 " SignColumn should match background
-highlight clear SignColumn      
+highlight clear SignColumn
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
