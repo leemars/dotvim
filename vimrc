@@ -46,6 +46,9 @@ Plug 'myint/indent-finder'
 " Asynchronous Lint Engine
 Plug 'w0rp/ale'
 
+" CoffeeScript support for vim
+Plug 'kchmck/vim-coffee-script', { 'for': 'coffee' }
+
 call plug#end()
 
 " A helper function to check whether a plugin is enabled
