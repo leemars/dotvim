@@ -16,10 +16,18 @@ endif
 
 call plug#begin('~/.vim/plugged')
 
-" colorscheme
-Plug 'vim-scripts/wombat256.vim'
+" => General
 
-" status/tabline
+" Intelligently reopen files at your last edit position in Vim
+Plug 'dietsche/vim-lastplace'
+
+" Show a diff using Vim its sign column
+Plug 'mhinz/vim-signify'
+
+" Vim plugin for detecting indentation of source code
+Plug 'myint/indent-finder'
+
+" lean & mean status/tabline for vim that's light as air
 Plug 'vim-airline/vim-airline' | Plug 'vim-airline/vim-airline-themes'
 
 " Preserve missing EOL at the end of text files
@@ -28,8 +36,13 @@ Plug 'vim-scripts/PreserveNoEOL'
 " Maintains a history of previous yanks, changes and deletes
 Plug 'vim-scripts/YankRing.vim'
 
-" Show a diff using Vim its sign column
-Plug 'mhinz/vim-signify'
+" Asynchronous Lint Engine
+Plug 'w0rp/ale'
+
+" => Filetypes
+
+" CoffeeScript support for vim
+Plug 'kchmck/vim-coffee-script', { 'for': 'coffee' }
 
 " Using the jedi autocompletion library for VIM
 Plug 'davidhalter/jedi-vim', { 'for': 'python' }
@@ -37,17 +50,10 @@ Plug 'davidhalter/jedi-vim', { 'for': 'python' }
 " Vim python-mode. PyLint, Rope, Pydoc, breakpoints from box.
 Plug 'python-mode/python-mode', { 'for': 'python' }
 
-" Intelligently reopen files at your last edit position in Vim
-Plug 'dietsche/vim-lastplace'
+" => Colorschemes
 
-" Vim plugin for detecting indentation of source code
-Plug 'myint/indent-finder'
-
-" Asynchronous Lint Engine
-Plug 'w0rp/ale'
-
-" CoffeeScript support for vim
-Plug 'kchmck/vim-coffee-script', { 'for': 'coffee' }
+" Wombat for 256 color xterms
+Plug 'vim-scripts/wombat256.vim'
 
 call plug#end()
 
