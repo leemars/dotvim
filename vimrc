@@ -25,7 +25,8 @@ Plug 'dietsche/vim-lastplace'
 Plug 'mhinz/vim-signify'
 
 " Vim plugin for detecting indentation of source code
-Plug 'myint/indent-finder'
+"Plug 'myint/indent-finder'
+Plug 'vim-scripts/yaifa.vim'
 
 " lean & mean status/tabline for vim that's light as air
 Plug 'vim-airline/vim-airline' | Plug 'vim-airline/vim-airline-themes'
