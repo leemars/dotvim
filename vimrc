@@ -45,6 +45,9 @@ Plug 'w0rp/ale'
 " CoffeeScript support for vim
 Plug 'kchmck/vim-coffee-script', { 'for': 'coffee' }
 
+" Vastly improved Javascript indentation and syntax support in Vim
+Plug 'pangloss/vim-javascript', { 'for': 'javascript' }
+
 " Using the jedi autocompletion library for VIM
 Plug 'davidhalter/jedi-vim', { 'for': 'python' }
 
