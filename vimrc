@@ -211,10 +211,9 @@ if s:has_plugged('vim-airline')
   let g:airline#extensions#tabline#enabled=1
 endif
 
-
-""""""""""""""""""""""""""""""""""""
+"""""""""""""""""""""""""""""""""""""""
 " YankRing
-""""""""""""""""""""""""""""""""""""
+"""""""""""""""""""""""""""""""""""""""
 if s:has_plugged('YankRing.vim')
   let g:yankring_history_dir=$HOME.'/.vim/tmp/yankring'
   let g:yankring_replace_n_pkey='<C-K>'
