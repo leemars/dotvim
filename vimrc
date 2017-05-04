@@ -94,6 +94,12 @@ set fileencodings=ucs-bom,utf-8,gbk,euc-jp,euc-kr,big5,gb18030,latin1
 " Turn on wild menu
 set wildmenu
 
+" Set completion mode as Zsh's style
+" 1st TAB: complete longest common string
+" 2nd TAB: start wild menu if it is enabled
+" 3rd and later TABs: complete the next full match in wild menu
+set wildmode=longest:full,full
+
 " Always show current position
 set ruler
 
