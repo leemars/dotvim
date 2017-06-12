@@ -239,3 +239,21 @@ if s:has_plugged('ale')
 \   'html': ['htmlhint'],
 \ }
 endif
+
+"""""""""""""""""""""""""""""""""""""""
+" python-mode
+"""""""""""""""""""""""""""""""""""""""
+if s:has_plugged('python-mode')
+  let g:pymode_folding=0
+  let g:pymode_lint=0
+  let g:pymode_doc=0
+  let g:pymode_rope=0
+  let g:pymode_options_colorcolumn=0
+endif
+
+"""""""""""""""""""""""""""""""""""""""
+" jedi-vim
+"""""""""""""""""""""""""""""""""""""""
+if s:has_plugged('jedi-vim')
+  setlocal completeopt-=preview
+endif
