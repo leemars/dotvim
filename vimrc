@@ -229,3 +229,13 @@ if s:has_plugged('YankRing.vim')
   let g:yankring_replace_n_pkey='<C-K>'
   let g:yankring_replace_n_nkey='<C-J>'
 endif
+
+"""""""""""""""""""""""""""""""""""""""
+" ale
+"""""""""""""""""""""""""""""""""""""""
+if s:has_plugged('ale')
+  let g:ale_linters = {
+\   'python': ['flake8'],
+\   'html': ['htmlhint'],
+\ }
+endif
