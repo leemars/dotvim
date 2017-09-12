@@ -48,6 +48,9 @@ Plug 'kchmck/vim-coffee-script', { 'for': 'coffee' }
 " Vastly improved Javascript indentation and syntax support in Vim
 Plug 'pangloss/vim-javascript', { 'for': 'javascript' }
 
+" React JSX syntax highlighting and indenting for vim.
+Plug 'mxw/vim-jsx', { 'for': 'javascript' }
+
 " Using the jedi autocompletion library for VIM
 Plug 'davidhalter/jedi-vim', { 'for': 'python' }
 
@@ -256,4 +259,12 @@ endif
 """""""""""""""""""""""""""""""""""""""
 if s:has_plugged('jedi-vim')
   setlocal completeopt-=preview
+endif
+
+
+"""""""""""""""""""""""""""""""""""""""
+" vim-jsx
+"""""""""""""""""""""""""""""""""""""""
+if s:has_plugged('vim-jsx')
+  let g:jsx_ext_required=0
 endif
