@@ -90,6 +90,10 @@ endfunction
 let mapleader=","
 let g:mapleader=","
 
+" Visual shifting (does not exit Visual mode)
+vnoremap < <gv
+vnoremap > >gv
+
 " Clipboard (from spf13)
 "
 if has('clipboard')
