@@ -43,6 +43,9 @@ Plug 'w0rp/ale'
 " a Git wrapper so awesome, it should be illegal
 Plug 'tpope/vim-fugitive'
 
+" Pasting in Vim with indentation adjusted to destination context
+Plug 'sickill/vim-pasta'
+
 " => Filetypes
 
 " Jinja plugins for vim (syntax and indent)
