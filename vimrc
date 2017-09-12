@@ -42,6 +42,9 @@ Plug 'w0rp/ale'
 
 " => Filetypes
 
+" Jinja plugins for vim (syntax and indent)
+Plug 'lepture/vim-jinja'
+
 " CoffeeScript support for vim
 Plug 'kchmck/vim-coffee-script', { 'for': 'coffee' }
 
