@@ -46,6 +46,9 @@ Plug 'tpope/vim-fugitive'
 " Pasting in Vim with indentation adjusted to destination context
 Plug 'sickill/vim-pasta'
 
+" A vim plugin to display the indention levels with thin vertical lines
+Plug 'yggdroot/indentline'
+
 " => Filetypes
 
 " Jinja plugins for vim (syntax and indent)
