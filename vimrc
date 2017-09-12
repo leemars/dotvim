@@ -40,6 +40,9 @@ Plug 'vim-scripts/YankRing.vim'
 " Asynchronous Lint Engine
 Plug 'w0rp/ale'
 
+" a Git wrapper so awesome, it should be illegal
+Plug 'tpope/vim-fugitive'
+
 " => Filetypes
 
 " Jinja plugins for vim (syntax and indent)
