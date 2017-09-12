@@ -85,6 +85,11 @@ endfunction
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => General
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" With a map leader it's possible to do extra key combinations
+let mapleader=","
+let g:mapleader=","
+
 " Clipboard (from spf13)
 "
 if has('clipboard')
