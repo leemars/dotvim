@@ -246,6 +246,7 @@ if s:has_plugged('vim-airline')
   let g:airline_right_alt_sep=''
   let g:airline_theme='powerlineish'
   let g:airline#extensions#tabline#enabled=1
+  let g:airline#extensions#ale#enabled=1
 endif
 
 """""""""""""""""""""""""""""""""""""""
