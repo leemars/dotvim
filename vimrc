@@ -49,6 +49,9 @@ Plug 'sickill/vim-pasta'
 " A vim plugin to display the indention levels with thin vertical lines
 Plug 'yggdroot/indentline'
 
+" Vim plugin for the Perl module / CLI script 'ack'
+Plug 'mileszs/ack.vim'
+
 " => Filetypes
 
 " Jinja plugins for vim (syntax and indent)
@@ -292,4 +295,14 @@ endif
 """""""""""""""""""""""""""""""""""""""
 if s:has_plugged('vim-jsx')
   let g:jsx_ext_required=0
+endif
+
+
+"""""""""""""""""""""""""""""""""""""""
+" ack.vim
+"""""""""""""""""""""""""""""""""""""""
+if s:has_plugged('ack.vim')
+  if executable('ag')
+    let g:ackprg = 'ag --vimgrep'
+  endif
 endif
