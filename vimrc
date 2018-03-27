@@ -287,6 +287,7 @@ endif
 """""""""""""""""""""""""""""""""""""""
 if s:has_plugged('jedi-vim')
   setlocal completeopt-=preview
+  let g:jedi#smart_auto_mappings=0
 endif
 
 
