@@ -271,6 +271,7 @@ if s:has_plugged('ale')
   let g:ale_linters = {
 \   'python': ['flake8'],
 \   'html': ['htmlhint'],
+\   'javascript': [],
 \ }
 endif
 
