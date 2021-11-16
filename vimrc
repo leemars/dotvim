@@ -69,6 +69,9 @@ Plug 'mxw/vim-jsx', { 'for': 'javascript' }
 " Using the jedi autocompletion library for VIM
 Plug 'davidhalter/jedi-vim', { 'for': 'python' }
 
+" the Requirements File Format syntax support for Vim
+Plug 'raimon49/requirements.txt.vim', {'for': ['requirements', 'requirements.in']}
+
 " Vim python-mode. PyLint, Rope, Pydoc, breakpoints from box.
 Plug 'python-mode/python-mode', { 'for': 'python' }
 
@@ -306,4 +309,8 @@ if s:has_plugged('ack.vim')
   if executable('ag')
     let g:ackprg = 'ag --vimgrep'
   endif
+endif
+
+if s:has_plugged('requirements.txt.vim')
+  let g:requirements#detect_filename_pattern='\v.*require(ment)?s.*\.(txt|in)$'
 endif
