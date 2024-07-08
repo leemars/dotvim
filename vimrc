@@ -315,8 +315,10 @@ endif
 " ack.vim
 """""""""""""""""""""""""""""""""""""""
 if s:has_plugged('ack.vim')
-  if executable('ag')
-    let g:ackprg = 'ag --vimgrep'
+  if executable('rg')
+    let g:ackprg='rg --vimgrep'
+  elseif executable('ag')
+    let g:ackprg='ag --vimgrep'
   endif
 endif
 
