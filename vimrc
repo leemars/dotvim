@@ -206,7 +206,11 @@ highlight clear SignColumn
 set nobackup
 
 " Persistent undo
-set undodir=~/.vim/tmp/undo
+if !has('nvim')
+  set undodir=~/.vim/tmp/undo
+else
+  set undodir=~/.vim/tmp/nundo
+endif
 set undofile
 
 " Swap file
@@ -216,7 +220,11 @@ set directory=~/.vim/tmp/swap
 let g:netrw_home=$HOME.'/.vim/tmp/netrw'
 
 " viminfo
-set viminfo+=n~/.vim/tmp/viminfo
+if !has('nvim')
+  set viminfo+=n~/.vim/tmp/viminfo
+else
+  set viminfo+=n~/.vim/tmp/nviminfo
+endif
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
