@@ -132,7 +132,7 @@
 	ignore = dirty
 [submodule "bundle/vim-colors-solarized"]
 	path = bundle/vim-colors-solarized
-	url = git://github.com/altercation/vim-colors-solarized.git
+	url = https://github.com/altercation/vim-colors-solarized.git
 	ignore = dirty
 [submodule "bundle/vundle"]
 	path = bundle/vundle
@@ -184,7 +184,7 @@
 	ignore = dirty
 [submodule "bundle/ctrlp-funky"]
 	path = bundle/ctrlp-funky
-	url = git://github.com/tacahiroy/ctrlp-funky.git
+	url = https://github.com/tacahiroy/ctrlp-funky.git
 	ignore = dirty
 [submodule "bundle/ir_black"]
 	path = bundle/ir_black
